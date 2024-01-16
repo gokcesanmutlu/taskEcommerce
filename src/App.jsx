@@ -29,7 +29,6 @@ function App() {
           <Route path="/" element={<MainPage products={products} setProducts={setProducts} />} />
           <Route path="/detail/:id" element={<DetailPage />} />
           <Route path="/about" element={<About />} />
-
           <Route path="*" element={<Undefined />} />
         </Routes>
       </BrowserRouter>

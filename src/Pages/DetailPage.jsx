@@ -7,8 +7,8 @@ const DetailPage = () => {
   const [detail, setDetail] = useState([])
 
   //Get Products Detail
-  useEffect(({baseURL}) => {
-    axios.get(baseURL + `products/${id}`)
+  useEffect(() => {
+    axios.get(`products/${id}`)
       .then((res) => setDetail(res.data))
       .catch((err) => console.log(err));
   }, []);
