@@ -1,6 +1,11 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom"
 
-const Header = () => {
+
+const Header = ({ products, setproducts }) => {
+    const [text, setText] = useState("");
+    const [filteredProducts, setFilteredProducts] = useState([]);
+
     return (
         <>
             <div className="px-5 py-3 flex justify-between bg-gray-100 text-orange-600 font-bold  font-mono ">
@@ -9,6 +14,11 @@ const Header = () => {
                         <img src="" alt="" />
                     </div>
                     <h1>SAN-COMMERCE</h1>
+                </div>
+
+                <div>
+                    <input type="text" onChange={(e) => setText(e.target.value)} className="border-orange-500 border-2 rounded-md" />
+                    {/* {console.log(text)} */}
                 </div>
 
                 <div className="flex gap-7 ">

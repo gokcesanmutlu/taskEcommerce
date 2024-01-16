@@ -6,7 +6,8 @@ body {
   margin: 0;
   background-color: rgba(255, 255, 255, 0.87);
   color: #242424;
-  min-height: 100vh;
+  min-height: 100%;
+
 }
 
 .mainLayout {
@@ -15,8 +16,8 @@ body {
 }
 
 .card {
-  width: 190px;
-  height: 254px;
+  width: 200px;
+  height: 260px;
   background: #07182e;
   position: relative;
   display: flex;
@@ -24,6 +25,7 @@ body {
   place-items: center;
   overflow: hidden;
   border-radius: 20px;
+  padding: 10px;
 }
 
 .card::before {
