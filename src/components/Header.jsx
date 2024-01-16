@@ -1,10 +1,13 @@
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom"
+import { Link, useSearchParams } from "react-router-dom";
 
+const Header = ({ }) => {
+    const [params, setParams] = useSearchParams();
 
-const Header = ({ products, setproducts }) => {
-    const [text, setText] = useState("");
-    const [filteredProducts, setFilteredProducts] = useState([]);
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      params.set('q', e.target[0].value);
+      setParams(params);
+    };
 
     return (
         <>
@@ -16,18 +19,26 @@ const Header = ({ products, setproducts }) => {
                     <h1>SAN-COMMERCE</h1>
                 </div>
 
-                <div>
-                    <input type="text" onChange={(e) => setText(e.target.value)} className="border-orange-500 border-2 rounded-md" />
-                    {/* {console.log(text)} */}
-                </div>
+                <form onSubmit={handleSubmit} className="flex gap-2">
+                    <input 
+                        type="text"
+                        className="border-orange-500 border-2 rounded-md"
+                    />
+                    <button type="submit" className="border-orange-500 border-2 rounded-md px-2">
+                        Search
+                    </button>
+                </form>
 
                 <div className="flex gap-7 ">
-                    <Link to={"/"} className="btn btn-primary">PRODUCTS</Link>
-                    <Link to={"/about"} className="btn btn-primary">ABOUT</Link>
+                    <Link to={"/"} className="btn btn-primary">
+                        PRODUCTS
+                    </Link>
+                    <Link to={"/about"} className="btn btn-primary">
+                        ABOUT
+                    </Link>
                     <Link className="btn btn-primary">CAMPAIGNS!</Link>
                     <Link className="btn btn-primary">CHART</Link>
                 </div>
-
             </div>
             <div className="flex">
                 <div className=" h-2 w-[35vw] bg-orange-500"></div>
@@ -37,7 +48,7 @@ const Header = ({ products, setproducts }) => {
                 <div className=" h-2 w-[15vw] bg-[#3b2388]"></div>
             </div>
         </>
-    )
-}
+    );
+};
 
-export default Header
+export default Header;
