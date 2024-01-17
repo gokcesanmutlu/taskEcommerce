@@ -1,3 +1,9 @@
+# Live Version
+- https://sancommerce.netlify.app/
+
+# GIF
+![ecommercegif](ecom.gif)
+
 # libraries
 - tailwind
 - react-router-dom
@@ -41,5 +47,6 @@ RESPONSIVE
 - url'de param olarak category varsa bu kategorinin verisini, yoksa da tüm ürünleri çeken bir axios yazdın
 her iki durumda da elde ettiğin sonucu filtred ve products değişikenlerine aktardın 
 - filtred'i ekrana bastın
+- ürün kartlarına tıklandığında detail sayfasına link ile yönlendirdin paran olarak url'ye id verdin ve yönlendirdiğin sayfadaki param'ı alıp o ürünün verisini çekip ekrana bastın.
 - Header'a döndün, usesearchparams kullanarak headerdaki inputa girilen değerin parametre olarak url'ye eklenmesini sağladın
 - header'da input ile urlye gönderdiğin param'ı, mainden aldın ve productları bu paramı içerip içermediğine göre filtreledin, bu filtrelemeyi de filtred'a aktardın 
