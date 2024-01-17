@@ -66,7 +66,7 @@ const MainPage = () => {
         ))}
         <button
           className={`p-2 font-mono uppercase font-semibold text-gray-800 border-2 border-orange-500 m-auto ${
-            category ? "hidden" : ""
+            category || query ? "hidden" : ""
           }`}
         >
           For More..
