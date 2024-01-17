@@ -1,12 +1,15 @@
+import { useRef } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 
 const Header = () => {
   const [params, setParams] = useSearchParams();
+  const formRef = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     params.set("q", e.target[0].value);
     setParams(params);
+    formRef.current.reset();
   };
 
   return (
@@ -19,7 +22,7 @@ const Header = () => {
           <h1>SAN-COMMERCE</h1>
         </div>
 
-        <form onSubmit={handleSubmit} className="flex gap-2 max-md:hidden">
+        <form ref={formRef} onSubmit={handleSubmit} className="flex gap-2 max-md:hidden">
           <input
             type="text"
             className="border-orange-500 border-2 rounded-md"

@@ -17,7 +17,7 @@
 - ekranda 12 adet ürün basılmıştır. For more tuşu ekranda 12 adet ürün olduğunda gözükmekte, ürünler kategorilere göre filtrelendiğinde kaybolmaktadır. İşlevsizdir.
 
 HEADER
-- Header'daki inputa bir şey yazıp submitlediğinizde, ekrandaki ürünler ürünün title'inde o şeyin bulunup bulunmamasına göre filtrelenecektir.
+- Header'daki inputa bir şey yazıp submitlediğinizde, ekrandaki ürünler ürünün title'inde o şeyin bulunup bulunmamasına göre filtrelenecektir. input'a değer girilip search edildiğinde input daha iyi bir kullanıcı deneyimi sağlamak için otomatikman temizlenecektir. 
 - Header'daki products sizi main sayfaya götürür ve bütün ürünler ekranda görünür
 - About kısmında taslak bir hakkımızda kısmına erişebilirsiniz ancak 
 kampanyalar ve sepet kısmı yalnızca görsellik olsun diye navbara eklenmiştir. İşlevsizdir.
