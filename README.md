@@ -5,22 +5,39 @@
 - react-toastify
 - axios
 
-# adımlar
--kütüphaneleri install ettin
-- tw kurulumunu yaptın
-- react toastify kurulumunu yaptın
-- router kullanarak sayfalamayı hallettin
+# Proje Açıklamaları
+- Asidebar'daki kategorilere tıkladığınızda ekrandaki ürünler kategorilerine göre filtrelenecektir. All categorisi ise size filtrelenmemiş ürünlere dönme şansı verecektir.
 
-
-# Proje Yönendirmesi
-- Asidebar'daki kategorilere tıkladığınızda ekrandaki ürünler kategorilerine göre filtrelenecektir
+- ekranda 12 adet ürün basılmıştır. For more tuşu ekranda 12 adet ürün olduğunda gözükmekte, ürünler kategorilere göre filtrelendiğinde kaybolmaktadır. İşlevsizdir.
 
 HEADER
-- Header'daki inputa bir şey yazıp submitlediğinizde, ürünün title'inde o şeyin bulunup bulunmamasına göre ürünler filtrelenecektir.
+- Header'daki inputa bir şey yazıp submitlediğinizde, ekrandaki ürünler ürünün title'inde o şeyin bulunup bulunmamasına göre filtrelenecektir.
 - Header'daki products sizi main sayfaya götürür ve bütün ürünler ekranda görünür
 - About kısmında taslak bir hakkımızda kısmına erişebilirsiniz ancak 
 kampanyalar ve sepet kısmı yalnızca görsellik olsun diye navbara eklenmiştir. İşlevsizdir.
 
 ÜRÜNDETAY
--Ürün kartlarının üstüne tıkladığınızda ürün detay sayfasına yönlendirileceksiniz, ve orada ürünün descriptionu gibi ek bilgiler olacak
-- ürün te
+- Ürün kartlarının üstüne tıkladığınızda ürün detay sayfasına yönlendirileceksiniz, ve orada ürünün descriptionu gibi ek bilgiler olacak
+- ürün detay sayfasından tekrar tüm ürünlerin olduğu anasayfaya dönmek için navbardaki products'ı tıklamalısınız
+
+RESPONSIVE
+- input küçük ekranlarda kaybolur.
+- aside ve navdaki text'ler küçülür
+- cartlar medium ekran boyutundan daha küçük bir ekran boyutunda ortalanır
+
+
+# Adımlar
+- kütüphaneleri install ettin
+- tw kurulumunu yaptın
+- react toastify kurulumunu yaptın
+- router kullanarak sayfalamayı hallettin
+- dosya sistemini kurdun 
+- header'i yaptın
+- main layoutu yaptın
+- categoryleri axios ile çekip ekrana bastın
+- categorilere tıklayınca, tıklanılan kategoriyi parametre olarak urlye gönderdin
+- url'de param olarak category varsa bu kategorinin verisini, yoksa da tüm ürünleri çeken bir axios yazdın
+her iki durumda da elde ettiğin sonucu filtred ve products değişikenlerine aktardın 
+- filtred'i ekrana bastın
+- Header'a döndün, usesearchparams kullanarak headerdaki inputa girilen değerin parametre olarak url'ye eklenmesini sağladın
+- header'da input ile urlye gönderdiğin param'ı, mainden aldın ve productları bu paramı içerip içermediğine göre filtreledin, bu filtrelemeyi de filtred'a aktardın 

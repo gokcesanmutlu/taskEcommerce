@@ -7,7 +7,6 @@ body {
   background-color: rgba(255, 255, 255, 0.87);
   color: #242424;
   min-height: 100%;
-
 }
 
 .mainLayout {
@@ -15,6 +14,7 @@ body {
   grid-template-columns: minmax(150px, 200px) 1fr;
 }
 
+/* The product cards were taken from the site called "uiverse" */
 .card {
   width: 200px;
   height: 260px;
