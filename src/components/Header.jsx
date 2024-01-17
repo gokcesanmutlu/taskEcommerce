@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="px-5 py-3 flex justify-between bg-gray-100 text-orange-600 font-bold  font-mono max-md:text-[14px]">
+      <div className="px-5 py-3 flex justify-between bg-gray-100 text-orange-600 font-bold font-mono max-md:text-[14px]">
         <div>
           <div>
             <img src="" alt="" />

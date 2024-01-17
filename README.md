@@ -25,6 +25,8 @@ RESPONSIVE
 - aside ve navdaki text'ler küçülür
 - cartlar medium ekran boyutundan daha küçük bir ekran boyutunda ortalanır
 
+# Projede harcanılan Süre:
+- 14 ocak 4 saat  | 15 ocak 9 saat  |  16 ocak 4 saat  = 17saat
 
 # Adımlar
 - kütüphaneleri install ettin
